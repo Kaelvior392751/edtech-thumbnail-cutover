@@ -1,0 +1,1 @@
+import test from"node:test";import assert from"node:assert/strict";import{reportStatus}from"./thumbnail_service.ts";test("deadline reporting marks a 36-hour deadline due-soon",()=>{const now=new Date("2026-10-23T00:00:00.000Z");assert.equal(reportStatus("2026-10-24T12:00:00.000Z",now),"due-soon");assert.equal(reportStatus("2026-10-22T23:00:00.000Z",now),"overdue");});

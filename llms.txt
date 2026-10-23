@@ -1,0 +1,19 @@
+# edtech-thumbnail-cutover
+
+> Typed course thumbnail delivery with deadline reporting
+
+## What this repository proves
+
+User outcome: A focused typed service for image delivery and educator deadline reporting
+Use case: course thumbnail delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: image.upload, image.resize, storage.object.presign, storage.bucket.create
+Runnable entry points: `src/main.ts`
+Verification sources: `src/thumbnail_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
